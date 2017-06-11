@@ -1,0 +1,49 @@
+0.  A  BMP supports 32 bit or 4 billion (2^32) colors
+    GIF's support 8 bit or 256 (2^8) colors
+    LPEG's support 24 bit or 16 million(2^24) colors
+    PNG also supports 24 bit or 16 million colors (since each bit can be either 0 or 1) 
+1.  GIF's support animation
+2.  Some amount of data is lost in lossy compression due to which the decompressed file(image)
+    has a lower quality since the file cannot be completely decompressed or recovered anymore 
+    whereas lossless compression uses algorithms to make sure that the data can be fully recovered.
+3.  JPEG
+4.  the system modifies the filename’s first
+    character in the file’s directory entry to signal that the file
+    has been deleted while the actual file is left untouched.
+5.  TODO
+
+6.  stdint.h is a header file that declares specified integer types as having a certain width.
+
+7.  uint8_t stands for an unsigned inteher which is 8 bits long, similarly uint32_t stands for an integer 32 bits long, 
+    int32_t for a signed integer 32 bits long and uint16_t for an unsigned integer 16 bits long. 
+    They basically are used to shoew how we intend to use our data.
+
+8.  BYTE = 1 byte
+	DWORD = 4 bytes
+	LONG = 4 bytes
+	WORD = 2 bytes
+
+9.  The first 2 bytes of a BMP file must be the words 'BM' of bftype which is the bitmap signature
+
+10.bfSize specifies the size, in bytes, of the bitmap file whereas
+   biSize specifies the size of the structure in bytes. 
+
+11.A negative biheight indicates that our bitmap is a top-down DIB (device-independent bitmap) 
+   and its origin is the upper left corner.
+
+12.biBitCount 
+
+13. fopen might return null if the output file cant be opened to write to or there may not enough space
+    in memory to create a file.
+
+14. Because the third argument is the number of units to be read and we want to read only 1
+    unit of data at a time (which may contain more than 1 byte ).
+
+15. 3 since padding = 4 - 3*3
+
+16. The functon fseek takes the pointer from its current position in the file and moves it by
+    specified number of bytes.
+
+17. SEEK_CUR is a constant giving the current position of the file pointer from where the offset is added.
+
+18. David Malan, maybe.
